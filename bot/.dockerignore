@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment (no longer needed)
+venv/
+env/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# Logs
+*.log
+
+# Session files (will be mounted as volumes)
+sessions/*.session
+sessions/*.session-journal
+
+# Downloads (will be mounted as volumes)
+downloads/*
+
+# Other
+.env
+*.bak
