@@ -1,0 +1,19 @@
+# Ignore local runtime artifacts
+sessions/
+downloads/
+.env
+.venv
+venv
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Git
+.git
+
+# IDEs
+.vscode
+.idea
+.DS_Store
