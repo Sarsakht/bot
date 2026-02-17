@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  telegram-bot:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - ./sessions:/app/sessions
+      - ./downloads:/app/downloads
+      - ./reactor_data.json:/app/reactor_data.json
+    environment:
+      API_ID: "${API_ID}"
+      API_HASH: "${API_HASH}"
+      BOT_TOKEN: "${BOT_TOKEN}"
+      OWNER_ID: "${OWNER_ID}"
+      SESSION_NAME: "${SESSION_NAME:-myselfbot}"
+      PYTHONUNBUFFERED: "1"
+    # For local interactive debugging you can add `stdin_open: true` and `tty: true`
+    # Do NOT mount `config.py` in production; use environment variables or secrets.
